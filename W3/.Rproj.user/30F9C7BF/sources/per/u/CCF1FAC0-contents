@@ -1,0 +1,4 @@
+getwd()
+setwd("./covid-19-data")
+getwd()
+usa <- read.csv("us-counties.csv")
