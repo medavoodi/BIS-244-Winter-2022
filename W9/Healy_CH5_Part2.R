@@ -32,7 +32,11 @@ p <- ggplot(data = by_country,
             mapping = aes(x = roads_mean, y = donors_mean))
 
 p + geom_point() + geom_text(mapping = aes(label = country), hjust = -.1)
-      
+
+p <- ggplot(data = by_country,
+            mapping = aes(x = roads_mean, y = donors_mean, label = country))
+p + geom_point() + geom_text(hjust = -.1)
+
 # ======================= hands-on 1 vjust ================
 
 # ggrepel provides geoms for ggplot2 to repel overlapping text labels:
@@ -49,7 +53,7 @@ p <- ggplot(data = by_country,
 p + geom_point()  + geom_text_repel()
 
 # A look at date in elections_historic
-View(elections_historic)
+elections_historic <- elections_historic
 
 elections_historic %>% select(2:7)       
 
