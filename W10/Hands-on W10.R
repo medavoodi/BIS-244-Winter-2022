@@ -1,4 +1,8 @@
 ## Hands-on 1
+library(gapminder)
+library(tidyverse)
+library(ggrepel)
+library(socviz)
 
 # Considering American Sociological Association Section Membership dataset (asasec), For 2013 show the relatioship between members and revenues and also cosider different colors for having journal. Use the linear prediction line.
 
