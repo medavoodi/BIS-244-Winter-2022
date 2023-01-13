@@ -12,7 +12,10 @@
 
 ## Hands-on 3
 # Revise the code below to use *Accent* for color
-
+p <- ggplot(data = organdata,
+            mapping = aes(x = roads, y = donors, color = world))
+p + geom_point(size = 1.5) +
+  theme(legend.position = "top")
 
 
 ## Hands-on 4
